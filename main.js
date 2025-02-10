@@ -21,7 +21,8 @@ recognition.onresult = function(event) {
     if (command.includes("circle")) {
         drawCircle = true;
         drawRect = false;
-    } else if (command.includes("rectangle")) {
+    }
+    if (command.includes("rectangle")) {
         drawCircle = false;
         drawRect = true;
     }
